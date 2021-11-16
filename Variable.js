@@ -1,7 +1,5 @@
 let firstName = 'Asabeneh' // first name of a person
 let lastName = 'Yetayeh' // last name of a person
-let city = 'Helsinki' // capital city
-let age = 100 // age in years
-let isMarried = true
+let No = 100
 
-console.log(firstName, lastName, city, age, isMarried)
+console.log(firstName, lastName, No)
