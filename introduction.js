@@ -1,1 +1,1 @@
-console.log('start, Learn Basic JavaSript')
+console.log('Welcome to 30DaysOfJavaScript')
