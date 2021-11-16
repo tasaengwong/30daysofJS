@@ -37,3 +37,27 @@ console.log(char.match('a'))
 let cat = "30"
 console.log(cat.concat(" Days"," of"," and", " Javascript"))
 console.log(char.repeat(2))
+
+//Level 2
+console.log("The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.")
+console.log("Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead.")
+console.log(typeof '10')
+
+let num = 9.81
+let numflloat = +num
+console.log(numflloat+0.19)
+
+let randomNum = Math.random()        
+let numBtnZeroAndTen = randomNum * 101
+let randomNumRoundToFloor = Math.floor(numBtnZeroAndTen)
+console.log(randomNumRoundToFloor) 
+
+function getRandomBetween(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  console.log(getRandomBetween(50,100));
+
+  const stringtext = Math.random().toString(36)
+  console.log(stringtext)
+
+  
