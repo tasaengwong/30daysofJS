@@ -98,21 +98,20 @@ for (u = 1; u <= 5; u++) {
     //   document.write(Math.pow(i, ));
     //   document.write(" "); // num u
     // }
+
     // for (k = 0 ; k <= 3; k++){
     //   document.write(" ");
     //   document.write(Math.pow(u, k));
     //   document.write(" ");
-    
+
     // }
     // break;
-    // if(i <= 5){
-      document.write(" ");
-      document.write(Math.pow(u,i));
-      document.write(" ");
-    // }
     
+    // if(i <= 5){
+    document.write(" ");
+    document.write(Math.pow(u, i));
+    document.write(" ");
+    // }
   }
 }
 // document.write(u)
-
-
