@@ -64,18 +64,61 @@ console.log(getRandomBetween(50, 100));
 const stringtext = Math.random().toString(36);
 console.log(stringtext);
 
-var u, i;
-u = 1;
+let n = 5,
+  st; // row or column count
+// defining an empty string
+
+for (let i = 1; i <= n; i++) {
+  // external loop
+  for (let j = 0; j < n; j++) {
+    // internal loop
+    st += "n";
+  }
+  // newline after each row
+  st += "\n";
+}
+// printing the string
+console.log(st);
+
+var u,
+  i,
+  k = 0,
+  u = 1;
 
 document.write("<br><br>");
-while (u <= 5) {
-  i = 1;
-  while (i <= 5) {
-    document.write( Math.pow(i, u));
-    i++;
+for (u = 1; u <= 5; u++) {
+  //row
+  document.write(`<br>${u}`);
+  // document.write(i);
+  for (i = 1; i <= 4; i++) {
+    //col
+    // document.write(i);
+    // if (i >= 5) {
+    //   document.write(" ");
+    //   document.write(Math.pow(i, ));
+    //   document.write(" "); // num u
+    // }
+    for (k = 0 ; k <= 3; k++){
+      document.write(" ");
+      document.write(Math.pow(u, k));
+      document.write(" ");
+    
+    }
+    break;
+    // if(i <= 5){
+    //   document.write(" ");
+    //   document.write(Math.pow(u,k));
+    //   document.write(" ");
+    // }
+    
   }
-  u++;
-  document.write("<br>");
 }
+// document.write(u)
 
-
+/*
+1^1  
+2^1
+3^1
+4^1
+5^1
+*/
