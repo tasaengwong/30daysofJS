@@ -100,6 +100,21 @@ const timer = time.getTime()
 
 console.log(day+'/'+month+'/'+year)
 
+// let base = prompt ('enter base')
+// let height = prompt ('enter height')
+// let area = (0.5*base*height)
+// console.log('the area of the triangle is\t'+area)
+
+
+
+let numA = prompt ('enter sideA')
+let numB = prompt ('enter sideB')
+// let C = prompt ('enter sideC')
+let perimeter = numA + numB
+alert (perimeter)
+console.log('the perimeter of the triangle is:\t'+perimeter)
+
+
 
 
 
