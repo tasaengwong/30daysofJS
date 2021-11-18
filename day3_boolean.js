@@ -100,21 +100,42 @@ const timer = time.getTime()
 
 console.log(day+'/'+month+'/'+year)
 
-// let base = prompt ('enter base')
-// let height = prompt ('enter height')
-// let area = (0.5*base*height)
+// let length = prompt ('enter length')
+// let width = prompt ('enter width')
+// let area = (0.5*length*width)
 // console.log('the area of the triangle is\t'+area)
 
+// // let numA = Number(prompt ('enter sideA'))
+// // let numB = Number(prompt ('enter sideB'))
+// // let numC = Number(prompt ('enter sideC'))
+// let perimeter = 2 * area 
+// alert (perimeter)
+// console.log('the rectangle of the triangle is:\t'+perimeter)
+
+//radius calcurator
+// let r  =Number(prompt('Enter you r'))
+// // let r2  =Number(prompt('Enter you r'))
+// let PI = Math.PI
+// let area = PI * Math.pow(r,2)
+// alert ('circle is '+area)
+
+//circumference
+
+// let circle = 2 * PI * r
+// console.log('circumference is\t'+ circle)
+
+//slope
+//  let interceptX = Number(prompt('Enter your intercemp-X'))
+//  let interceptY = Number(prompt('Enter your intercemp-Y'))
+//  let slope = interceptY += 2*interceptX - 2
+//  console.log(slope)
 
 
-let numA = prompt ('enter sideA')
-let numB = prompt ('enter sideB')
-// let C = prompt ('enter sideC')
-let perimeter = numA + numB
-alert (perimeter)
-console.log('the perimeter of the triangle is:\t'+perimeter)
+let interceptY1 = Number(prompt('Enter your intercemp-Y1'))
+let interceptY2 = Number(prompt('Enter your intercemp-Y2'))
 
-
-
-
+let interceptX1 = Number(prompt('Enter your intercemp-X1'))
+let interceptX2 = Number(prompt('Enter your intercemp-X2'))
+let slope = (interceptY2-interceptY1) / (interceptX2-interceptX1)
+console.log(slope)
 
