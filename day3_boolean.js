@@ -124,18 +124,24 @@ console.log(day+'/'+month+'/'+year)
 // let circle = 2 * PI * r
 // console.log('circumference is\t'+ circle)
 
-//slope
-//  let interceptX = Number(prompt('Enter your intercemp-X'))
-//  let interceptY = Number(prompt('Enter your intercemp-Y'))
-//  let slope = interceptY += 2*interceptX - 2
-//  console.log(slope)
 
+//slope
+let interceptX = Number(prompt('Enter your intercemp-X'))
+let interceptY = Number(prompt('Enter your intercemp-Y'))
+let slope1 = interceptY += 2*interceptX - 2
+console.log(slope1)
 
 let interceptY1 = Number(prompt('Enter your intercemp-Y1'))
 let interceptY2 = Number(prompt('Enter your intercemp-Y2'))
 
 let interceptX1 = Number(prompt('Enter your intercemp-X1'))
 let interceptX2 = Number(prompt('Enter your intercemp-X2'))
-let slope = (interceptY2-interceptY1) / (interceptX2-interceptX1)
-console.log(slope)
+let slope2 = (interceptY2-interceptY1) / (interceptX2-interceptX1)
+console.log(slope2)
 
+//calculate value
+
+let v1 = Number(prompt('Enter your X'))
+let v2 = Number(prompt('Enter your Y'))
+let calculater = v2 += Math.pow(v1,2) + 6 * v1 + 9 
+console.log(calculater)
