@@ -70,12 +70,12 @@ let n = 5,
 
 for (let i = 1; i <= n; i++) {
   // external loop
-  for (let j = 0; j < n; j++) {
+for (let j = 0; j < n; j++) {
     // internal loop
     st += "n";
-  }
+}
   // newline after each row
-  st += "\n";
+st += "\n";
 }
 // printing the string
 console.log(st);
