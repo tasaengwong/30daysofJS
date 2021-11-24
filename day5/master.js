@@ -1,6 +1,6 @@
 
 console.log(countries)
-console.log(webTechs)
+console.log(webTechs);
 
 let text ='I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
 let words = text.split(" ");
@@ -60,3 +60,5 @@ console.log("average: ", sum / len);
 
 
 console.log(countries.length)
+
+  
