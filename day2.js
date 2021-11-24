@@ -90,11 +90,7 @@ for (u = 1; u <= 5; u++) {
   //row
   document.write(`<br>${u}`);
   // document.write(i);
-<<<<<<< HEAD
-  for (i = 0; i <= 3; i++) {
-=======
   for (i = 1; i <= 4; i++) {
->>>>>>> 3612e31 (day 2 data type)
     //col
     // document.write(i);
     // if (i >= 5) {
@@ -102,7 +98,6 @@ for (u = 1; u <= 5; u++) {
     //   document.write(Math.pow(i, ));
     //   document.write(" "); // num u
     // }
-<<<<<<< HEAD
 
     // for (k = 0 ; k <= 3; k++){
     //   document.write(" ");
@@ -120,7 +115,6 @@ for (u = 1; u <= 5; u++) {
   }
 }
 // document.write(u)
-=======
     for (k = 0 ; k <= 3; k++){
       document.write(" ");
       document.write(Math.pow(u, k));
@@ -134,8 +128,8 @@ for (u = 1; u <= 5; u++) {
     //   document.write(" ");
     // }
     
-  }
-}
+  
+
 // document.write(u)
 
 /*
@@ -145,4 +139,3 @@ for (u = 1; u <= 5; u++) {
 4^1
 5^1
 */
->>>>>>> 3612e31 (day 2 data type)
