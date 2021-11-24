@@ -114,9 +114,66 @@ console.log(arr)
 
 // program to generate random strings
 
-const random_hex_color_code = () => {
-  let n = (Math.random() * 0xfffff * 1000000).toString(16);
-  return '#' + n.slice(0, 6);
-};
 
-console.log(random_hex_color_code())
+
+var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+console.log(randomColor)
+
+var r = () => Math.random() * 256 >> 0;
+var color = `rgb(${r()}, ${r()}, ${r()})`;
+console.log(color)
+
+
+
+const  region= [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
+const webTec = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+
+const upregion = region.map( region => region.toUpperCase())
+const char = upregion.map( upregion => upregion.substring(0,3))
+const lent = region.map(region => region.length)
+
+console.log(upregion)
+console.log(lent)
+console.log(char)
+
+
+// const search = region.includes("land")
+// console.log(search)
+
+const fullStacks = [['HTML', 'CSS', 'JS', 'React'],['Node', 'Express', 'MongoDB']
+]
+fullStacks.forEach((fullStacks) =>{
+  fullStacks.forEach((data) =>{
+    console.log(data)
+  })
+})
+
+const sortedCounties = region;
+sortedCounties.sort()
+console.log(sortedCounties)
+webTec.sort()
+mernStack.sort()
+console.log(webTec)
+console.log(mernStack)
