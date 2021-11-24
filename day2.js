@@ -231,14 +231,11 @@ for (u = 1; u <= 5; u++) {
     //   document.write(" ");
     // }
     
+    // if(i <= 5){
+    document.write(" ");
+    document.write(Math.pow(u, i));
+    document.write(" ");
+    // }
   }
 }
 // document.write(u)
-
-/*
-1^1  
-2^1
-3^1
-4^1
-5^1
-*/
