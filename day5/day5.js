@@ -1,4 +1,4 @@
-sconst countries = [
+const countries = [
   "Albania",
   "Bolivia",
   "Canada",
