@@ -158,18 +158,16 @@ console.log(BMI(60, 1.55));
 // Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
 
 function findMax(...argument) {
-  
- return Math.max.apply(null, argument);
-   }
+  return Math.max.apply(null, argument);
+}
 
-console.log(findMax(0,10,5));
+console.log(findMax(0, 10, 5));
 console.log(findMax(0, -10, -2));
-
 
 //level 2f
 // Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation.
 // program to solve quadratic equation
-
+/*
 let root1, root2;
 
 // take input from the user
@@ -206,7 +204,42 @@ else {
     console.log(
     `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
   );
+} */
+
+// Declare a function name printArray. It takes array as a parameter and it prints out each value of the array.
+
+// const printArray = (...takes) =>{
+//     let input = prompt ('Enter your num')
+//     return input.split()
+// }
+// console.log(printArray())
+
+// Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object.
+
+
+function showDateTime(){
+    const now = new Date()
+    const years = now.getFullYear()
+    const month = now.getMonth() + 1
+    const date = now.getDate() 
+    const hours = now.getHours() 
+    const minutes = now.getMinutes()
+  
+    return (`${date}/${month}/${years} ${hours}:${minutes}`); 
+};
+
+console.log(showDateTime())
+
+// Declare a function name swapValues. This function swaps value of x to y.
+function swapValues(){
+
+let a = prompt('X value');
+let b = prompt('Y value');
+let temp;
+temp = a;
+a = b;
+b = temp;
+
+return(`X => ${a} Y=> ${b}`);
 }
-
-
-
+console.log(swapValues())
