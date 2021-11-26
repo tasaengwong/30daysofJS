@@ -247,9 +247,64 @@ console.log(showDateTime())
 // Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
 
 
-const reverseArray = (rev) =>{
-      
-let rev = rev.reverse();  
-return rev 
+const reverseArray = (...reverse) =>{
+  console.log(reverse)
 }
-console.log(reverseArray([1, 2, 3, 4, 5]))
+
+// reverseArray(1, 2, 3, 4, 5)
+reverseArray('A', 'B', 'C')
+
+// Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray.
+const capitalizeArray = arr =>{
+  const newArr  = []
+  for (const element of arr){
+    newArr.push(element.toUpperCase())
+  }
+  return newArr
+}
+const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+console.log(capitalizeArray(countries))
+
+// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+const addItem = (...item) =>{
+  console.log(item)
+}
+addItem('item1','item2','item3')
+
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+function removeItem() {
+  var arr = ["shift", "splice", "filter", "pop"];
+
+  // Popping the last element from the array
+  var Removed = arr.pop();
+  console.log(arr );
+}
+removeItem();
+
+// Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+
+
+const sumOfNumbers = (...args) => {
+  let sum = 0
+  for (const element of args) {
+    sum += element
+  }
+  return sum
+}
+
+console.log(sumOfNumbers(1, 2, 3, 4)) 
+
+// Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+function numbers(start, end) {
+  var x = [],
+        i = Math.floor(start / 2) * 2 + 1;
+
+    while(i <= end) {
+        x.push(i);
+        i += 2;
+    };
+    return x;        
+}
+
+
+console.log([...numbers(2, 20)])
