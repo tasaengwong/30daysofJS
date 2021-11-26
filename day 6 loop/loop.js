@@ -201,7 +201,7 @@ for (ux = 36; ux <= 90; ux = ux + kx) {
 }
 document.write("<br>");
 
-
+document.write("<br>");
 for (io = 0 ; io<10; io= io+2){
   document.write(`${io}<br>`);
     for (jo = 1;jo<=9 ; jo=jo+2){
