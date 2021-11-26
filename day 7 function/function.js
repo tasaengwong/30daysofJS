@@ -231,15 +231,25 @@ function showDateTime(){
 console.log(showDateTime())
 
 // Declare a function name swapValues. This function swaps value of x to y.
-function swapValues(){
+// function swapValues(){
 
-let a = prompt('X value');
-let b = prompt('Y value');
-let temp;
-temp = a;
-a = b;
-b = temp;
+// let a = prompt('X value');
+// let b = prompt('Y value');
+// let temp;
+// temp = a;
+// a = b;
+// b = temp;
 
-return(`X => ${a} Y=> ${b}`);
+// return(`X => ${a} Y=> ${b}`);
+// }
+// console.log(swapValues())
+
+// Declare a function name reverseArray. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+
+const reverseArray = (rev) =>{
+      
+let rev = rev.reverse();  
+return rev 
 }
-console.log(swapValues())
+console.log(reverseArray([1, 2, 3, 4, 5]))
