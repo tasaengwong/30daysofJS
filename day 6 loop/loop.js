@@ -85,129 +85,95 @@ for (j = 2; j <= 100; j++) {
 
 console.log("\n");
 
-let ans = 0;
-for (s = 1; s <= 100; s++) {
-  ans = ans + s;
-}
-console.log(ans);
+let ans = 0
+for (s = 1; s <= 100; s++){
+  ans = ans + s
+} 
+console.log(ans)
 
-let answer = 0;
-for (s = 1; s <= 100; s++) {
-  if (s % 2 === 0) {
-    answer = answer + s;
+let answer = 0
+for (s = 1; s <= 100; s++){
+  if(s%2===0){
+  answer = answer + s
   }
-}
-console.log(answer);
-let answers = 0;
-for (s = 1; s <= 100; s++) {
-  if (s % 2 !== 0) {
-    answers = answers + s;
+} 
+console.log(answer)
+let answers = 0
+for (s = 1; s <= 100; s++){
+  if(s%2!==0){
+  answers = answers + s
   }
-}
-console.log(answers);
+} 
+console.log(answers)
 
-console.log(
-  "The sum of all even from 0 to 100 is " +
-    answer +
-    " And the sum all odd from 0 to 100 is " +
-    answers
-);
 
-const arr = Array.from({ length: 5 }, () => Math.floor(Math.random() * 10));
-console.log(arr);
+console.log('The sum of all even from 0 to 100 is '+answer+' And the sum all odd from 0 to 100 is ' + answers)
+
+const arr  = Array.from({ length: 5},() => Math.floor(Math.random() * 10))
+console.log(arr)
 
 // program to generate random strings
 
-var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-console.log(randomColor);
 
-var r = () => (Math.random() * 256) >> 0;
+
+var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+console.log(randomColor)
+
+var r = () => Math.random() * 256 >> 0;
 var color = `rgb(${r()}, ${r()}, ${r()})`;
-console.log(color);
+console.log(color)
 
-const region = [
-  "Albania",
-  "Bolivia",
-  "Canada",
-  "Denmark",
-  "Ethiopia",
-  "Finland",
-  "Germany",
-  "Hungary",
-  "Ireland",
-  "Japan",
-  "Kenya",
-];
+
+
+const  region= [
+  'Albania',
+  'Bolivia',
+  'Canada',
+  'Denmark',
+  'Ethiopia',
+  'Finland',
+  'Germany',
+  'Hungary',
+  'Ireland',
+  'Japan',
+  'Kenya'
+]
 const webTec = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Redux",
-  "Node",
-  "MongoDB",
-];
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
 
-const mernStack = ["MongoDB", "Express", "React", "Node"];
+const mernStack = ['MongoDB', 'Express', 'React', 'Node']
 
-const upregion = region.map((region) => region.toUpperCase());
-const char = upregion.map((upregion) => upregion.substring(0, 3));
-const lent = region.map((region) => region.length);
+const upregion = region.map( region => region.toUpperCase())
+const char = upregion.map( upregion => upregion.substring(0,3))
+const lent = region.map(region => region.length)
 
-console.log(upregion);
-console.log(lent);
-console.log(char);
+console.log(upregion)
+console.log(lent)
+console.log(char)
+
 
 // const search = region.includes("land")
 // console.log(search)
 
-const fullStacks = [
-  ["HTML", "CSS", "JS", "React"],
-  ["Node", "Express", "MongoDB"],
-];
-fullStacks.forEach((fullStacks) => {
-  fullStacks.forEach((data) => {
-    console.log(data);
-  });
-});
+const fullStacks = [['HTML', 'CSS', 'JS', 'React'],['Node', 'Express', 'MongoDB']
+]
+fullStacks.forEach((fullStacks) =>{
+  fullStacks.forEach((data) =>{
+    console.log(data)
+  })
+})
 
 const sortedCounties = region;
-sortedCounties.sort();
-console.log(sortedCounties);
-webTec.sort();
-mernStack.sort();
-console.log(webTec);
-console.log(mernStack);
-
-document.write("<br>");
-var ux,
-  ix,
-  kx = 13,
-  bx = 6,
-  tx = 2,
-  ux = 36;
-
-for (ux = 36; ux <= 90; ux = ux + kx) {
-  //row
-  document.write(`<br>${ux}`);
-
-  for (ix = ux; ix <= 4800000; ix = ix * bx) {
-    document.write(" ");
-    document.write(ix * bx);
-    document.write(" ");
-  }
-  bx++;
-  kx = kx + 2;
-}
-document.write("<br>");
-
-document.write("<br>");
-for (io = 0 ; io<10; io= io+2){
-  document.write(`${io}<br>`);
-    for (jo = 1;jo<=9 ; jo=jo+2){
-      document.write(jo+"<br>")
-      
-    }
-    break;
-   
-  }
+sortedCounties.sort()
+console.log(sortedCounties)
+webTec.sort()
+mernStack.sort()
+console.log(webTec)
+console.log(mernStack)
