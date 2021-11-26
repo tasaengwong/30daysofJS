@@ -60,5 +60,3 @@ console.log("average: ", sum / len);
 
 
 console.log(countries.length)
-
-  
