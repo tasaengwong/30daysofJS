@@ -308,3 +308,32 @@ function numbers(start, end) {
 
 
 console.log([...numbers(2, 20)])
+
+// Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+function numbers(start, end) {
+  var x = [],
+        i = Math.floor(start / 2) * 2 ;
+
+    while(i <= end) {
+        x.push(i);
+        i += 2;
+    };
+    return x;        
+}
+
+console.log([...numbers(2, 20)])
+
+// Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+function evensAndOdds(num) { 
+  
+  if (num % 2 == 0) {
+    return "The number of even  " ;
+  } else {
+    return "The number of odds  ";
+  }
+}
+console.log(evensAndOdds(99)) 
+
+// Write a function which takes any number of arguments and return the sum of the arguments
+
