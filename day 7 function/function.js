@@ -337,3 +337,42 @@ console.log(evensAndOdds(99))
 
 // Write a function which takes any number of arguments and return the sum of the arguments
 
+const Sum = (...args) => {
+  let sum = 0
+  for (const element of args) {
+    sum += element
+  }
+ console.log(sum)
+}
+
+Sum(1, 2, 3);
+Sum(1, 2, 3, 4);
+
+// Writ a function which generates a randomUserIp.
+const randomUserIp = (randomUserIp) =>{
+  const rand = Math.random().toString().substr(2, 8); 
+ console.log(rand)
+}
+randomUserIp()
+
+// Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+ function randomHexaNumberGenerator(){
+  let n = (Math.random() * 0xfffff * 1000000).toString(16);
+  return '#' + n.slice(0, 6);
+ }
+console.log(randomHexaNumberGenerator())
+
+// Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+function userIdGenerator(length) {
+  var randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  // var randomChars = Math.random().toString().substr(0,10)
+  var result = '';
+  for ( var i = 0; i < length; i++ ) {
+      result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
+  }
+  return result;
+}
+console.log(userIdGenerator(7))
+
+// Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+

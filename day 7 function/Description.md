@@ -46,6 +46,7 @@ function คือ code ที่เขียนเพื่อให้โป�
             const  anonymousFun = function(){
 
             }
+# Arrow function
 
 
 
