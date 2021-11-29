@@ -374,5 +374,30 @@ function userIdGenerator(length) {
 }
 console.log(userIdGenerator(7))
 
-// Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+
+// Write a function name rgbColorGenerator and it generates rgb colors.
+function rgbColorGenerator() {
+  var red = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + red + "," + green + "," + blue + ")";
+console.log(bgColor);
+
+  }
+  rgbColorGenerator();
+
+// Write a function arrayOfHexaColors which return any number of hexadecimal colors in an array.
+let arrayOfHexaColors = () => {
+  let allHexCodes = '123456789abcdef';
+  let loopCount = parseInt(Math.random() * 50);
+  let hexColorArr = [];
+  let hexChars = [];
+  for (let i = 0; i < 6; i++) {
+      hexChars.push(allHexCodes[parseInt(Math.random() * allHexCodes.length) - 1]);
+  }
+    hexColorArr.push('#' + hexChars.join(''));
+  
+  return hexColorArr;
+} 
+console.log(arrayOfHexaColors());
 
