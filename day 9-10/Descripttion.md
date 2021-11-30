@@ -34,8 +34,36 @@ index parameter and array itself. The index and the array optional.
 
 Iterate an array elements and modify the array elements. It takes a callback function with elements, index , array parameter and return a new array.
 
-### filter 
+### Filter 
 
 Filter : filter out item which full fill conditions and return a new array
 
 #### Example syntax 
+            //Filter countries containing land 
+            const countriesContainingLand = countries.filter((country) => country
+            includes('land')
+            console.log(countriesContainingLand)
+
+
+# #Day 10 Sets and Map
+## Set
+    set is collection of elements. Set can only contains unique element.
+    
+    
+### syntax 
+            //create an empty set 
+            const companies = new set()
+            consoloe.log(companies)
+
+### adding an element to a set
+            const companies = new Set() // creating an empty set
+            console.log(companies.size) // 0
+
+            companies.add('Google') // add element to the set
+            companies.add('Facebook')
+            companies.add('Amazon')
+            companies.add('Oracle')
+            companies.add('Microsoft')
+
+            console.log(companies.size) // 5 elements in the set
+            console.log(companies)
