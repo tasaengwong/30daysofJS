@@ -75,9 +75,9 @@ Filter : filter out item which full fill conditions and return a new array
             console.log(comoanies.delete('Google'))
 
 ### checking an element in the set 
-    // the has method can help to know if a certain element exists in a set.
+// the has method can help to know if a certain element exists in a set.
             console.log(companies.has('Apple')) 
             // false because don't have element Apple in a set
             
-    and remove all the element from a set using clear().
+and remove all the element from a set using clear().
             companies.clear()
