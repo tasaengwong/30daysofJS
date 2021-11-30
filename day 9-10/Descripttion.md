@@ -93,4 +93,34 @@ and remove all the element from a set using clear().
 
             console.log(numOne, numTwo, numThree)
 
-    If we like to skip on of the value in the array we use additional comma.The comma help to omit the value. And we can use default value in case the value of array for that index is undefined.
+
+If we like to skip on of the value in the array we use additional comma.The comma help to omit the value. And we can use default value in case the value of array for that index is undefined.
+
+We can not assign variable to all the element in the array. We can destructure  and we can get the remaining as array using spread operator (...)
+### Example 
+            const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            let [num1, num2, num3, ...rest] = nums
+
+            console.log(num1, num2, num3)
+            console.log(rest)
+
+We can Destructuring during iteration using for of
+### Example 
+            const countries = [['Finland', 'Helsinki'], ['Sweden', 'Stockholm']
+            ['Norway', 'Oslo']]
+
+            for (const [country, city] of countries) {
+            console.log(country, city)
+            }
+
+## Destructuring Object
+When we destructure the name of the variable we use to destructure should be exactly the same as the key or property of the object.
+
+# Spread or Rest Operator
+When we destructure an array we use the spread operator(...) to get the rest elements as array. In addition to that we use spread operator to spread arr elements to another array.
+### Example Spread operator to get the rest of array 
+            const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            let [num1, num2, num3, ...rest] = nums
+​
+            console.log(num1, num2, num3)
+            console.log(rest)
