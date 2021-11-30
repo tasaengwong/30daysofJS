@@ -82,3 +82,15 @@ Filter : filter out item which full fill conditions and return a new array
             
 and remove all the element from a set using clear().
             companies.clear()
+
+
+# day 11 Destructuring and Spreading
+    Destructuring is a unpack arrays,and object and assigning to a distinct variable.
+
+## Example Destructuring Arrays
+            const numbers = [1, 2, 3]
+            let [numOne, numTwo, numThree] = numbers
+
+            console.log(numOne, numTwo, numThree)
+
+    If we like to skip on of the value in the array we use additional comma.The comma help to omit the value. And we can use default value in case the value of array for that index is undefined.
