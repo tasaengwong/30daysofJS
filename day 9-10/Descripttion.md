@@ -67,3 +67,17 @@ Filter : filter out item which full fill conditions and return a new array
 
             console.log(companies.size) // 5 elements in the set
             console.log(companies)
+
+// using .add for add element to set
+### deleting an element a set 
+ // can delete an element from element a set using a delete method.
+            //syntax example 
+            console.log(comoanies.delete('Google'))
+
+### checking an element in the set 
+    // the has method can help to know if a certain element exists in a set.
+            console.log(companies.has('Apple')) 
+            // false because don't have element Apple in a set
+            
+    and remove all the element from a set using clear().
+            companies.clear()
