@@ -85,7 +85,7 @@ console.log(tycan)
 
 
 // Example Code 
-// function sayHello() {
-//     console.log('Hello')
-//   }
-//   setInterval(sayHello, 1000)
+function sayHello() {
+    console.log('Hello')
+  }
+  setInterval(sayHello, 1000)
