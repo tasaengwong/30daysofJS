@@ -29,7 +29,7 @@ Create an objecting with values
 
 # #day 9 Higher Order Function
 
-## Higher Order Funtiont
+## Higher Order Function
 
 Are function which take other function as a parameter or return a function
 
@@ -37,7 +37,7 @@ Are function which take other function as a parameter or return a function
 
 A callback is a function with can be passed as parameter to other function
 
-## Example Systax
+## Example Syntax
 
          // a callback function, the function could be any name
          const callback = (n) => {
@@ -61,3 +61,9 @@ index parameter and array itself. The index and the array optional.
 ### Map
 
 Iterate an array elements and modify the array elements. It takes a callback function with elements, index , array parameter and return a new array.
+
+### filter 
+
+Filter : filter out item which full fill conditions and return a new array
+
+#### Example syntax 
