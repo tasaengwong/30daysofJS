@@ -124,3 +124,29 @@ When we destructure an array we use the spread operator(...) to get the rest ele
 ​
             console.log(num1, num2, num3)
             console.log(rest)
+
+
+
+# Day 12 Regular Expression 
+
+A regular expression or RegExp is a language that htlp to find pattern in data. A RegExp can be use to check if some pattern exists in different data. To use RegExp in JS either we use RegExp we can declare a RegExp pattern using two forward slashes followed by a flag. we can create a pattern in two ways
+
+## Flags
+Flags are optional parameters in regular expression which determine the type of searching. Let see some of the flags
+- g : is a global flag which means looking for a pattern in whole text
+- i : case insensitive flag (If searches for both lowercase and uppercase)
+- m : multiline
+
+### Creating a pattern with RegExp Constructor 
+Declaring regular expression without global flag and case insensitive flag.
+            let pattern  = 'love'
+            let regEx = new RegExp(pattern)
+
+Declaring regular expression with global flag and case insensitive flag.
+            let pattern = 'love'
+            let flag = 'gi'
+            let regEx = new RegExp(pattern, flag)
+
+### Creating a pattern without RegExp Constructor
+Declaring regular expression with global flag and case insensitive flag.
+            let regEx= /love/gi

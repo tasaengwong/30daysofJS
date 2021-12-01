@@ -82,10 +82,5 @@ console.log(copyUsers)
 const tycan = Object.values(users.Alex.skills)
 console.log(tycan)
 
-
-
-// Example Code 
-function sayHello() {
-    console.log('Hello')
-  }
-  setInterval(sayHello, 1000)
+const value = Object.values(users)
+console.log(value)
