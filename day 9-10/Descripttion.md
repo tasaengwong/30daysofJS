@@ -139,14 +139,17 @@ Flags are optional parameters in regular expression which determine the type of 
 
 ### Creating a pattern with RegExp Constructor 
 Declaring regular expression without global flag and case insensitive flag.
+
             let pattern  = 'love'
             let regEx = new RegExp(pattern)
 
 Declaring regular expression with global flag and case insensitive flag.
+
             let pattern = 'love'
             let flag = 'gi'
             let regEx = new RegExp(pattern, flag)
 
 ### Creating a pattern without RegExp Constructor
 Declaring regular expression with global flag and case insensitive flag.
+
             let regEx= /love/gi
