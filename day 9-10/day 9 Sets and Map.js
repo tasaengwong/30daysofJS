@@ -67,3 +67,8 @@ console.log(UpName)
 
 const corresponding = products.map((product) => products.product == products.price )
 console.log(corresponding)
+
+
+
+
+

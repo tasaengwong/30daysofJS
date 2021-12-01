@@ -153,3 +153,39 @@ Declaring regular expression with global flag and case insensitive flag.
 Declaring regular expression with global flag and case insensitive flag.
 
             let regEx= /love/gi
+
+
+### RegExp Object Methods
+ - test() : Test for a match in a string. It return true or false
+ - match() : Return an array containing all of the matches. If we don't use a global flag, match() return an array and group.
+ - search() : Tests for match in string. If return the index of match
+ - replace() : Executes a search for a match in a string, and replace the matched substring
+
+ ## Square Bracket
+ let's use square bracket to include lower and upper case
+
+            // Example 
+            const pattern = '[Aa]pple' // this square bracket mean either A or a
+            const txt = 'Apple and banana are fruits. An old cliche says an apple a da
+            a doctor way has been replaced by a banana a day keeps the doctor far far
+            away. '
+            const matches = txt.match(pattern)
+            
+            console.log(matches)  
+
+
+# Day 13 Console Object Methods
+Use console object method to show output in the browser console. And the console method is the most popular testing  and debugging tool on browser. 
+
+- console.log() : using to show  output on the browser console. we can substitute value and also we can style the logging out put 
+- console.warn() : use console.warn to give warning on browser. For instance to inform or warn deprecation of version of a package
+- console.error() : show error message.
+- console.table() : method display as a table on the console.
+- console.time() : Start a timer you can use to track how long and operation takes.
+- console.info() : It display information message on browser console.
+- console.assert() : Writes an error message to the console if the assertion is false ans if the assertion is true, nothing happens.
+- console.group() : Can help to group difference log group.
+- console.count() : It prints the number of time this console.count() is called.
+- console.clear() : clean the browser console
+
+# Day 14 Error Handling
