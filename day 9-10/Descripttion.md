@@ -200,11 +200,11 @@ Javascript provides an error-handling  mechanism to cath runtime errors using-ca
              // code to be executed regardless of an error occurs or not
             }
 
-try : the try statement allows us define a block of code to be tested for errors while it is being executed.
+- try : the try statement allows us define a block of code to be tested for errors while it is being executed.
 
-catch : Catch block to use to log an error or display specific massages to the user.
+- catch : Catch block to use to log an error or display specific massages to the user.
 
-finally : The finally block can be used to complete the remaining task or reset variable that might have changed before error occurred in try block.
+- finally : The finally block can be used to complete the remaining task or reset variable that might have changed before error occurred in try block.
 
 ### Example:
             let lastName = 'Yetayeh'
@@ -212,3 +212,48 @@ finally : The finally block can be used to complete the remaining task or reset 
             } catch (err) {
             console.log(err)
             }
+
+- throw : the throw statement allow us to create a custom error.
+
+## Error Type 
+
+ - ReferenceError : An illegal reference has occurred.
+ - SyntaxError : A syntax error has occurred.
+ - TypeErroe : A Type error  has occurred.
+
+
+ # Day 15 Classes
+
+ Everything in JavaScript is an object, with it's properties and methods. We create class to create an object. The class defines attributes and the behavior of the object, while the object, on the other hand, represents the class.
+
+ #### Defining a class
+
+ To define a class we need the keyword class , the name of a class in CamelCase and block code(two curly brackets). Let us create a class name Person.
+
+            // Syntax
+            class ClassName{
+                //code goes here
+            }
+
+##### Example 
+
+            class Person {
+                //code goes here
+            }
+
+#### Class Instantiation
+
+Instantiation class means creating an object from a class. We need the keyword new and we call the name of the class after the word new.
+
+##### Example 
+
+            class Person {
+            // code goes here
+            }
+            const person = new Person()
+            console.log(person)
+
+As you can see, we have created a person object. 
+
+#### Class Constructor
+Constructor is specific methods and declare in class for create object. The constructor function starts with a keyword constructor followed by a parenthesis. 
