@@ -189,3 +189,26 @@ Use console object method to show output in the browser console. And the console
 - console.clear() : clean the browser console
 
 # Day 14 Error Handling
+Javascript provides an error-handling  mechanism to cath runtime errors using-catch-finally block.
+
+#### Syntax
+            try{
+             // code that may throw an error
+            } catch(err){
+             // code to be executed if an error occurs
+            } finally{
+             // code to be executed regardless of an error occurs or not
+            }
+
+try : the try statement allows us define a block of code to be tested for errors while it is being executed.
+
+catch : Catch block to use to log an error or display specific massages to the user.
+
+finally : The finally block can be used to complete the remaining task or reset variable that might have changed before error occurred in try block.
+
+### Example:
+            let lastName = 'Yetayeh'
+            let fullName = fistName + ' ' + lastName
+            } catch (err) {
+            console.log(err)
+            }
