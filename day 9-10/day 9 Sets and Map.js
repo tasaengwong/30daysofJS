@@ -130,5 +130,23 @@ console.log(findIndex)
 
 // Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
 
-const searchCountry = countries.findIndex((find) => countries == 'Norway') 
+const searchCountry = countries.findIndex((find) => countries.indexOf('Norway')) 
 console.log(searchCountry)
+
+// Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+const searchCounties = countries.findIndex((find) => countries === 'Russia') 
+console.log(searchCounties)
+
+
+// Find the total price of products by chaining two or more array iterators(eg. arr.map(callback).filter(callback).reduce(callback))
+
+const sumArray = arr => {
+  let sum = 0
+  const callback = function(element) {
+    sum += element
+  }
+  arr.forEach(callback)
+  return sum
+
+}
+console.log(sumArray(products))
