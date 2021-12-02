@@ -86,7 +86,49 @@ console.log(countriesStart)
 
 
 // Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items
-function getStringLists(products){
-  return products.filter((product) => typeof product === 'string')
+function getStringLists(names){
+  return names.filter(product => typeof product === 'string')
 }
-console.log(getStringLists)
+console.log(getStringLists(names))
+
+// Use reduce to sum all the numbers in the numbers array.
+
+const summary = numbers.reduce((n,m) => n+m,0)
+console.log(summary)
+
+// Use reduce to concatenate all the countries and to produce this sentence: Estonia, Finland, Sweden, Denmark, Norway, and IceLand are north European countries
+const concatenate = countries.reduce((c1,c2) => c1+','+c2)
+console.log(concatenate+' are north European countries')
+
+// Explain the difference between some and every
+
+/* every Check if all the elements are similar in one aspect. It returns boolean
+and some check if some the elements */
+
+// Use some to check if some names' length greater than seven in names array
+
+const check  = names.some((names) => names.length > 7 )
+console.log(check)
+
+// Use every to check if all the countries contain the word land
+
+const checkCountry = countries.every((countries) => countries.includes('land'))
+console.log(checkCountry)
+
+// Explain the difference between find and findIndex.
+
+// find : is return first Element with condition and findIndex return position of first element with condition
+
+// Use find to find the first country containing only six letters in the countries array
+const find = countries.find((find) => find.length === 6)
+console.log(find)
+
+//  Use findIndex to find the position of the first country containing only six letters in the countries array
+
+const findIndex = countries.findIndex((find) => find.length === 6)
+console.log(findIndex)
+
+// Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+
+const searchCountry = countries.findIndex((find) => countries == 'Norway') 
+console.log(searchCountry)
