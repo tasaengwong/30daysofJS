@@ -68,7 +68,25 @@ console.log(UpName)
 const corresponding = products.map((product) => products.product == products.price )
 console.log(corresponding)
 
+// Use filter to filter out countries containing land.
+
+const containingLand  = countries.filter((countries) => countries.includes('land'))
+console.log(containingLand)
+
+// Use filter to filter out countries having six character.
+
+const Letters = countries.filter(
+  (country) => country.length === 6
+)
+console.log(Letters)
+
+// Use filter to filter out country start with 'E'
+const countriesStart = countries.filter((country) => country.startsWith('E'))
+console.log(countriesStart)
 
 
-
-
+// Declare a function called getStringLists which takes an array as a parameter and then returns an array only with string items
+function getStringLists(products){
+  return products.filter((product) => typeof product === 'string')
+}
+console.log(getStringLists)
